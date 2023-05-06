@@ -1,4 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1 {
-display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.imagenCentrada {
+  display: block;
+  margin: auto;
+}
+
+.fotoBanco {
+  width: 75vw;
+}
+
+#imgCompraWeb {
+  width: 60vw;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.7s ease-in-out all;
+  margin: auto;
+}
+
+#imgCompraWeb.visible {
+  opacity: 1;
+}
+
+.imgCompra {
+  background-image: url("../img/compraOnline.jpg");
+  background-size: contain;
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: stretch;
+  flex-direction: column;
+}
+
+.imgCompra p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.enlaceFb {
+    height: 40px;
+    width: 40px;
 }

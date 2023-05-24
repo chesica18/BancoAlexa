@@ -15,6 +15,11 @@ function ingresar() {
     localStorage.setItem("cbu", inputCbu.value);
     window.location = "./pages/calculotransaccion.html";
   } else {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Usuario y/o contraseña invalidos ',
+    })
     console.log("cbu o contraseña incorrecta");
   }
 }
